@@ -2,22 +2,67 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(189, 225, 122);
+    height: 70vh;
+    background-color: rgb(255, 192, 203); /* Light pink for a romantic vibe */
 }
 
 .header_text {
     font-family: 'Nunito';
-    font-size: 50px;
+    font-size: 100px;
     font-weight: bold;
-    color: white;
+    color: rgb(248, 255, 126); /* Hot pink for vibrancy */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
+
+    /* Text shadow */
+    text-shadow: 3px 3px 7px rgba(255, 20, 147, 0.7); /* Deep pink shadow for depth */
+}
+
+.header_text1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* White text for contrast */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    /* Text shadow */
+    text-shadow: 3px 3px 7px rgba(255, 20, 147, 0.7); /* Deep pink shadow for depth */
 }
 
 .gif_container {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: rgb(255, 105, 180); /* Hot pink button color */
+    color: white; /* White text for contrast */
+    padding: 20px 36px;
+    text-align: center;
+    display: inline-block;
+    font-size: 45px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:active {
+    background-color: rgb(255, 20, 147); /* Darker pink on hover */
+    transform: scale(1.1); /* Slight enlargement */
 }
