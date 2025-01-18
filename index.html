@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Do you wanna go out with me?</h1>
+                
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class="container">
+                <h1 class = "header_text">Pretty Please?</h1>
+            </div>
+            <br>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        // Get the button and its current dimensions
+                        const button = document.getElementById('noButton');
+                        const buttonWidth = button.offsetWidth;
+                        const buttonHeight = button.offsetHeight;
+
+                        // Calculate random positions within the viewport
+                        const maxX = 390 - buttonWidth;
+                        const maxY = 900 - buttonHeight;
+
+                        const randomX = Math.random() * maxX;
+                        const randomY = Math.random() * maxY;
+
+                        // Apply the new position to the button
+                        button.style.position = 'absolute';
+                        button.style.left = `${randomX}px`;
+                        button.style.top = `${randomY}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
